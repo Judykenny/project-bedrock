@@ -7,3 +7,4 @@
 *.env
 .DS_Store
 lambda/handler.zip
+lambda/handler.zip
