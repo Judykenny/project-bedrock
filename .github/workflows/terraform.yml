@@ -37,7 +37,7 @@ jobs:
           TF_VAR_student_id: ${{ secrets.TF_VAR_STUDENT_ID }}
           TF_VAR_db_password: ${{ secrets.TF_VAR_DB_PASSWORD }}
 
-      - name: Terraform Plan (on PR)
+      - name: Terraform Plan
         if: github.event_name == 'pull_request'
         id: plan
         run: terraform plan -no-color -input=false
@@ -53,7 +53,7 @@ jobs:
           script: |
             const output = `#### Terraform Plan 📋
             \`\`\`
-            ${{ steps.plan.outputs.stdout }}
+            ${{ steps.plan.outputs.stdout || steps.plan.outputs.stderr }}
             \`\`\`
             `;
             github.rest.issues.createComment({
@@ -63,7 +63,7 @@ jobs:
               body: output
             });
 
-      - name: Terraform Apply (on merge to main)
+      - name: Terraform Apply
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         run: terraform apply -auto-approve -input=false
         env:
