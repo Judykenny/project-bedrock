@@ -1,0 +1,9 @@
+**/.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.terraform.lock.hcl
+*.pem
+*.env
+.DS_Store
+lambda/handler.zip
