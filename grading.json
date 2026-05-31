@@ -1,0 +1,37 @@
+{
+  "assets_bucket_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "bedrock-assets-alt-soe-025-3348"
+  },
+  "cluster_endpoint": {
+    "sensitive": false,
+    "type": "string",
+    "value": "https://C9149CA6980016EF9A02783AA75B3EF7.gr7.us-east-1.eks.amazonaws.com"
+  },
+  "cluster_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "project-bedrock-cluster"
+  },
+  "dev_view_access_key_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "AKIAXGGZZ76KCSXAYS6P"
+  },
+  "dev_view_secret_access_key": {
+    "sensitive": true,
+    "type": "string",
+    "value": "ZW12G7qNXE7s83isE1ZroFqrnvtS0rne3NVB4/+C"
+  },
+  "region": {
+    "sensitive": false,
+    "type": "string",
+    "value": "us-east-1"
+  },
+  "vpc_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "vpc-08c1d2861efba4bba"
+  }
+}
