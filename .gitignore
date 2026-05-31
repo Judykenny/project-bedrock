@@ -1,10 +1,20 @@
+# Terraform
 **/.terraform/
 *.tfstate
 *.tfstate.backup
 *.tfvars
 .terraform.lock.hcl
+
+# AWS CLI installer
+terraform/aws/
+terraform/awscliv2.zip
+awscliv2.zip
+aws/
+
+# Lambda zip
+lambda/handler.zip
+
+# Misc
 *.pem
 *.env
 .DS_Store
-lambda/handler.zip
-lambda/handler.zip
