@@ -1,0 +1,13 @@
+**/.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.terraform.lock.hcl
+terraform/aws/
+terraform/awscliv2.zip
+aws/
+awscliv2.zip
+lambda/handler.zip
+*.pem
+*.env
+.DS_Store
