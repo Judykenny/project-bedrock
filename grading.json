@@ -1,27 +1,8 @@
 {
-  "assets_bucket_name": {
-    "sensitive": false,
-    "type": "string",
-    "value": "bedrock-assets-alt-soe-025-3348"
-  },
-  "cluster_endpoint": {
-    "sensitive": false,
-    "type": "string",
-    "value": "https://4CF67F5F847A199FCA97324ECC108881.gr7.us-east-1.eks.amazonaws.com"
-  },
-  "cluster_name": {
-    "sensitive": false,
-    "type": "string",
-    "value": "project-bedrock-cluster"
-  },
-  "region": {
-    "sensitive": false,
-    "type": "string",
-    "value": "us-east-1"
-  },
-  "vpc_id": {
-    "sensitive": false,
-    "type": "string",
-    "value": "vpc-04763311938cf2f47"
-  }
+  "alb_url": "http://k8s-retailap-retailst-17d19cf248-1839028645.us-east-1.elb.amazonaws.com",
+  "cluster_name": "project-bedrock-cluster",
+  "region": "us-east-1",
+  "vpc_id": "vpc-04763311938cf2f47",
+  "assets_bucket_name": "bedrock-assets-alt-soe-025-3348",
+  "cluster_endpoint": "https://4CF67F5F847A199FCA97324ECC108881.gr7.us-east-1.eks.amazonaws.com"
 }
